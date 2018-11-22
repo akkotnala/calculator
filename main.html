@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/code.js"></script>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>Calculator</h1>
+        </center>
+    </header>
+
+    <div class="container">
+
+        <form name="Calculator">
+            <input class="input form-control" type="text" maxlength="40" size="25" name="Display" onclick="this.form.display.value = 0 " readonly>
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="button" class="btn" name="tan" value="tan" onclick="tane()"></td>
+                            <td><input type="button" class="btn" value="cos" ONCLICK="cose()"></td>
+                            <td><input type="button" class="btn" name="sin" value="sin" onclick="sine()"></td>
+                            <td><input type="button" class="btn" name="ex" value="ex" onclick="functionn('^')"></td>
+                            <td><input type="button" class="btn btn-danger" name="clear" value="C" onclick="clean()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn" name="log" value="log" onclick="logg()"></td>
+                            <td><input type="button" class="btn" name="leftbrac" value="x^2" onclick="sqqq()"></td>
+                            <td><input class="btn" type="button" name="root" value="√" onclick="squareroot()"></td>
+                            <td><input class="btn" type="button" name="mul" value="*" onclick="functionn('*')"></td>
+                            <td><input type="button" class="btn btn-warning" name="back" value="←" onclick="backe()"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn btn1 btn-default" name="nine" value="9" onclick="num('9')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="eight" value="8" onclick="num('8')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="seven" value="7" onclick="num('7')"></td>
+                            <td><input class="btn" type="button" name="sub" value="-" onclick="functionn('-')"></td>
+                            <td><input type="button" class="btn" name="pi" value="π" onclick="pii()"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" class="btn btn1 btn-default" name="six" value="6" onclick="num('6')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="five" value="5" onclick="num('5')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="four" value="4" onclick="num('4')"></td>
+                            <td rowspan="2"><input class="btn long1" type="button" name="add" value="+" onclick="functionn('+')"></td>
+                            <td><input type="button" class="btn" name="percent" value="%" onclick="functionn('%')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn btn1 btn-default" name="three" value="3" onclick="num('3')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="two" value="2" onclick="num('2')"></td>
+                            <td><input type="button" class="btn btn1 btn-default" value="1" onclick="num('1')"></td>
+                            <td><input class="btn" type="button" name="div" value="/" onclick="functionn('/')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn" name="plusminus" value="+/-" onclick="signe()"></td>
+                            <td><input type="button" class="btn btn1 btn-default" name="one" value="0" onclick="num('0')"></td>
+                            <td><input type="button" class="btn" name="two" value="." onclick="Dot()"></td>
+                            <td colspan="2"><input class="btn btn-success  long" type="button" name="result" value="=" onclick="equals()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </form>
+
+    </div>
+    <br>
+    <hr>
+    <center>
+        <footer>&copy; Abhishek Kotnala 2017</footer>
+    </center>
+</body>
+
+</html>
